@@ -7,6 +7,7 @@ First, run the development server:
 ```bash
 npx json-server api.json -p 3333 -w
 npm run dev
+npm run devv
 # or
 yarn dev
 ```

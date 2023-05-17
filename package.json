@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "devv": "concurrently \"npx json-server api.json -p 3333 -w\" \"npm run dev\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/node": "20.1.7",
     "@types/react": "18.2.6",
+    "concurrently": "^8.0.1",
     "typescript": "5.0.4"
   }
 }
