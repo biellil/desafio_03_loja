@@ -1,30 +1,23 @@
-import { GetStaticProps } from 'next';
-interface Post {
-  id: string;
-  title: string;
-}
-interface PostsProps {
-  posts: Post[];
-}
-export default function Posts({ posts }: PostsProps) {
+import SEO from '../pages/components/SEO';
+import styles from '../styles/home.module.scss';
+export default function Home() {
   return (
-    <div>
-      <h1>Listagem de Posts</h1>
-      <ul>
-        {posts.map(post => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <SEO title="Dev News!" excludeTitleSuffix />
+     < main className={styles.content}>
+        <section className={styles.section}>
+          <span>Olá Dev!</span>
+          <h1>
+            Bem-vindo e bem-vinda <br />
+            ao <span>Dev</span>News!
+          </h1>
+          <p>
+            Um blog com conteúdos extremamente <br />
+            <span>relevantes para o seu aprendizado.</span>
+          </p>
+        </section>
+        <img src="/home.svg" alt="Home image" />
+      </main>
+    </>
   );
 }
-export const getStaticProps: GetStaticProps<PostsProps> = async () => {
-  const response = await fetch('http://localhost:3333/posts');
-  const posts = await response.json();
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 5, // In seconds
-  };
-};
