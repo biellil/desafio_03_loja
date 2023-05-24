@@ -1,33 +1,63 @@
 import { GetStaticProps } from 'next';
+import Link from 'next/link';
 import SEO from '../components/SEO';
+import styles from './posts.module.scss';
 
 interface Post {
-  id: string;
+  id: string,
+  slug: string;
   title: string;
+  excerpt: string;
+  updatedAt: string;
 }
+
+
 interface PostsProps {
   posts: Post[];
 }
+
 export default function Posts({ posts }: PostsProps) {
   return (
-    <div>
+    <>
       <SEO title="Posts" />
-      <h1>Listagem de Posts</h1>
-      <ul>
-        {posts.map(post => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </ul>
-    </div>
-  );
+
+<main className={styles.container}>
+  <div className={styles.posts}>
+    {posts.map(post => (
+      <Link href={`/posts/${post.id}`} key={post.id}legacyBehavior>
+        <a>
+          <time>{post.updatedAt}</time>
+          <strong>{post.title}</strong>
+          <p>{post.excerpt}</p>
+        </a>
+      </Link>
+    ))}
+  </div>
+</main>
+</>
+);
 }
+
+
 export const getStaticProps: GetStaticProps<PostsProps> = async () => {
-  const response = await fetch('http://localhost:3333/posts');
-  const posts = await response.json();
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 5, // In seconds
-  };
+  try {
+    const response = await fetch('http://localhost:3333/posts');
+    const posts: Post[] = await response.json();
+
+    return {
+      props: {
+        posts,
+      },
+      revalidate: 60 * 60 * 12, // 12 hours
+    };
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    return {
+      props: {
+        posts: [],
+      },
+      revalidate: 60 * 5, // 5 minutes
+    };
+  }
 };
+
