@@ -3,14 +3,23 @@ import { useRouter } from 'next/router';
 import styles from './styles.module.scss';
 
 export function Header() {
-    const { asPath } = useRouter();
+  const { asPath } = useRouter();
+
   return (
     <header className={styles.container}>
       <div className={styles.content}>
-        <img src="/logo.svg" alt="DevNews!" />
         <nav>
-        <Link href="/" className={asPath === '/' ? styles.active : ''}>Home </Link>
-          <Link href="/posts" className={asPath === '/posts' ? styles.active : ''}>Posts</Link>
+          <Link href="/" passHref legacyBehavior>
+            <a>
+              <img src="/logo.svg" alt="DevNews!" />
+            </a>
+          </Link>
+          <Link href="/" className={asPath === '/' ? styles.active : ''}>
+            Home
+          </Link>
+          <Link href="/posts" className={asPath === '/posts' ? styles.active : ''}>
+            News
+          </Link>
         </nav>
       </div>
     </header>

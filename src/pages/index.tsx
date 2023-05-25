@@ -3,17 +3,16 @@ import styles from '../styles/home.module.scss';
 export default function Home() {
   return (
     <>
-      <SEO title="Dev News!" excludeTitleSuffix />
+      <SEO title="Tec News!" excludeTitleSuffix />
      < main className={styles.content}>
         <section className={styles.section}>
-          <span>Olá Dev!</span>
-          <h1>
-            Bem-vindo e bem-vinda <br />
-            ao <span>Dev</span>News!
+          <span>Olá Tec!</span>
+          <h1> bem-vindos <br />
+            ao <span>Tec</span>News!
           </h1>
           <p>
             Um blog com conteúdos extremamente <br />
-            <span>relevantes para o seu aprendizado.</span>
+            <span>relevantes para mundor Tec!</span>
           </p>
         </section>
         <img src="/home.svg" alt="Home image" />

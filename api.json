@@ -2,21 +2,61 @@
   "posts": [
     {
       "id": 1,
-     "slug": "slug1",
-     "title": "title1",
-     "content":"content1",
-     "updatedAt": "20/05/2023"
+      "slug": "Ubisoft%20reinicia%20desenvolvimento%20de%20Prince%20of%20Persia%20Remake",
+      "author": "Gianlucca Del Cielo via nexperts",
+      "title": "Ubisoft reinicia desenvolvimento de Prince of Persia Remake",
+      "description": "O remake de Prince of Persia: The Sands of Time é um dos projetos mais aguardados pelos fãs da franquia de aventura e ação da Ubisoft. O jogo original, lançado em 2003, foi um sucesso de crítica e público, e marcou uma nova era para a franquia.",
+      "urlToImage": "https://tm.ibxk.com.br/2023/05/24/24152352041264.jpg?ims=704x264",
+      "icone": "https://tm.ibxk.com.br/2023/05/24/24152402756266.jpg?ims=164x118",
+      "content": "O remake de Prince of Persia: The Sands of Time é um dos projetos mais aguardados pelos fãs da franquia de aventura e ação da Ubisoft. O jogo original, lançado em 2003, foi um sucesso de crítica e público, e marcou uma nova era para a franquia./r/nNo entanto, a nova versão vem enfrentando diversos desafios e atrasos desde o seu anúncio em setembro de 2020. No mais novo desdobramento sobre o projeto, a Ubisoft revelou que o título teve seu desenvolvimento completamente reiniciado./r/nEm uma entrevista recente, o produtor Jean-Francois Naud e o diretor Michael McIntyre revelaram que a versão repaginada está atualmente na fase de conceito na Ubisoft Montreal, que assumiu seu desenvolvimento em maio de 2022, substituindo os estúdios Pune e Mumbai. Segundo eles, a equipe está analisando o feedback da comunidade e buscando a melhor forma de entregar o título com a nova tecnologia e a experiência adquirida desde o lançamento do original.",
+      "updatedAt": "25/05/2023 às 16:00"
      
     },
     {
       "id": 2,
-      "slug": "slug2",
-      "title": "title2",
-      "content":"content2",
-      "updatedAt": "updatedAt2"
+      "slug": "Xiaomi%20Civi%203%20é%20lançado%20com%20duas%20câmeras%20frontais%20e%20até%201%20TB%20de%20memória",
+      "author": "André Luiz Dias Gonçalves",
+      "title":"Xiaomi Civi 3 é lançado com duas câmeras frontais e até 1 TB de memória",
+      "description": "A Xiaomi apresentou nesta quinta-feira (25) o Civi 3, que marca a estreia do recém-apresentado processador MediaTek Dimensity 8200 Ultra. ",
+      "urlToImage": "https://tm.ibxk.com.br/2023/05/25/25124924910151.jpg?ims=1120x420",
+      "icone": "https://tm.ibxk.com.br/2023/05/25/25124938889152.jpg?ims=164x118",
+      "urlToImage2":" https://img.ibxk.com.br/2023/05/25/25125029027153.jpg?ims=704x",
+      "content": "A Xiaomi apresentou nesta quinta-feira (25) o Civi 3, que marca a estreia do recém-apresentado processador MediaTek Dimensity 8200 Ultra. O modelo também se destaca pelo design fino e elegante./r/nO sucessor do Civi 2 traz tela OLED de 6,55 polegadas com resolução FHD+, taxa de atualização de 120 Hz, até 1.500 nits de brilho e HDR10+. Na parte interna, fica a versão aprimorada do chip Dimensity 8200, com velocidades de clock e GPU ampliadas e suporte às bandas sub-6GHz e mmWave 5G./r/nEle pode vir acompanhado de 12 GB ou 16 GB de memória RAM, trazendo três opções de armazenamento: 256 GB, 512 GB e 1 TB. O telefone tem entrada para dois chips de operadora, Bluetooth 5.3, Wi-Fi 6, NFC, porta USB-C, suporte a Dolby Atmos, certificação de áudio sem fio de alta resolução e Android 13.",
+      "content2":"Outro atrativo do Xiaomi Civi 3 é o carregamento rápido de 67 W, que possibilita recuperar 100% da carga da bateria de 4.500 mAh em apenas 38 minutos, conforme a gigante da tecnologia. Há ainda um sistema de refrigeração líquida de aço inoxidável que ajuda a evitar superaquecimento./r/nCâmera dupla frontal e design premium No quesito câmeras, o novo intermediário da Xiaomi apresenta configuração dupla na dianteira, rcom os sensores de 32 MP abrigados no entalhe em foma de pílula e fazendo gravação em 4K. Na traseira são três lentes, a principal de 50 MP com estabilização óptica (OIS), as câmeras ultrawide (8 MP) e macro (2 MP)./r/nAlgo que também chama a atenção é o visual, marcado pela estética de dois tons na tampa traseira, com quatro opções de cores — roxo, verde, dourado e cinza. Contornos planos e curvos, espessura de apenas 7,56 mm e módulo de câmera protegido por um anel de metal são outros destaques./r/nVeja também: Xiaomi 13 Lite: versão mais básica da nova linha é lançada no Brasil/r/nO Xiaomi Civi 3 custa a partir de 2.499 yuans, o equivalente a R$ 1,7 mil pela cotação de hoje, sem considerar impostos e taxas, valor referente à versão 12 GB + 256 GB. A variante mais parruda, na configuração 16 GB + 1 TB, sai por 2.999 yuans (R$ 2,1 mil).",
+      "updatedAt": "25/05/2023 às 15:30"
       
 
-    }
+    },
+
+    {
+      "id":3,
+      "slug": "Amazon%20Prime%20Gaming%20revela%20os%20jogos%20gratuitos%20de%20junho;%20veja%20lista",
+      "author":"Jean Carlos Foss" ,
+      "title":"Amazon Prime Gaming revela os jogos gratuitos de junho; veja lista" ,
+      "description": "Fim da linha para The Flash. A série da DC, transmitida pela emissora The CW nos Estados Unidos, chegou ao seu desfecho definitivo ontem (24)",
+      "urlToImage":"https://tm.ibxk.com.br/2023/05/25/25104106378056.jpg?ims=704x264" ,
+      "icone":"https://tm.ibxk.com.br/2023/05/25/25104120620057.jpg?ims=164x118" ,
+      "urlToImage2":"https://img.ibxk.com.br/2023/05/25/25111203691074.jpg?ims=704x",
+      "content":"Fim da linha para The Flash. A série da DC, transmitida pela emissora The CW nos Estados Unidos, chegou ao seu desfecho definitivo ontem (24), com a exibição do episódio 'A New World, Part Four' (Um Novo Mundo, Parte Quatro, em tradução livre), o 13ª da 9ª temporada. A obra, criada por Greg Berlanti, Geoff Johns e Andrew Kreisberg, era a última do chamado Arrowverse (Arrowverso, traduzindo), que teve início com a série Arrow, de 2012, focada no Arqueiro Verde./r/nThe Flash: Grant Gustin diz que aceitaria interpretar outro herói/r/nO final de The Flash, inclusive, incita muitas dúvidas nos fãs das séries da DC em relação ao Arrowverse. Será que o universo compartilhado pelos heróis dos seriados do canal The CW acabou de vez? Ou ainda teremos mais produções que darão sequência a ele? Vamos entender!" ,  
+      "content2": "Arrowverse acabou com o fim de The Flash?/r/nO Arrowverse foi uma das iniciativas mais ambiciosas da televisão, unindo diversos super-heróis da DC em um mesmo mundo através de várias séries diferentes, como The Flash, Batgirl, Supergirl, Arrow, Raio Negro, entre outras. Porém, uma a uma, as obras desse universo compartilhado foram terminando ou sendo canceladas (especialmente por conta de quedas nos números de espectadores), restando apenas The Flash, que, agora, também atingiu seu final./r/nNesse sentido, tudo aponta para o fim oficial do Arrowverse após mais de uma década. Algo que se confirma ainda mais quando analisamos os planos da The CW, que, atualmente, não pretende apostar em nenhuma outra série de herói que tenha relação com a Terra-Prime, universo criado durante o crossover 'Crise nas Terras Infinitas', que uniu todos os personagens do Arrowverse em um mesmo tempo e espaço./r/nThe Flash: os 10 melhores episódios da série/r/nAtualmente, o único seriado da The CW com figuras da DC que ainda segue vivo é Superman & Lois, que já está em sua 3ª temporada. O título poderia ser uma esperança para o Arrowverse, contudo, como já foi explicado no contexto da narrativa, a obra não se passa na Terra-Prime, onde estão os demais personagens do universo compartilhado. Ou seja, não faria sentido forçar a série para dentro do Arrowverse apenas para mantê-lo vivo./r/nTodavia, nada impede que o Arrowverse seja ressuscitado em algum momento, ou que seus personagens apareçam, de alguma maneira, no novo DCU, que remodelará completamente as obras audiovisuais da DC. Teremos que aguardar para saber!",  
+      "updatedAt":"25/05/2023 às 15:00" 
+    },
+
+    {
+      
+      "id":3,
+      "slug": "Amazon%20Prime%20Gaming%20revela%20os%20jogos%20gratuitos%20de%20junho;%20veja%20lista",
+      "author": "Thomas Schulze Costa",
+      "title":"Amazon Prime Gaming revela os jogos gratuitos de junho; veja lista" ,
+      "description": "O Prime Gaming revelou hoje (25) a próxima leva de jogos que serão disponibilizados como benefício para os assinantes do serviço Amazon Prime. ",
+      "urlToImage": "https://tm.ibxk.com.br/2023/05/25/25144008425218.jpg?ims=704x264",
+      "icone": "https://tm.ibxk.com.br/2023/05/25/25144002194217.jpg?ims=164x118",
+      "urlToImage2":"https://img.ibxk.com.br/2023/05/25/25123654724146.png?ims=704x",
+      "content": "O Prime Gaming revelou hoje (25) a próxima leva de jogos que serão disponibilizados como benefício para os assinantes do serviço Amazon Prime. Ao todo 13 títulos estão incluídos nos brindes, com destaque para o incrível Neverwinter Nights: Enhanced Edition./r/nMembros do serviço também poderão resgatar conteúdo bônus para ajudar o seu gameplay em FIFA 23, League of Legends, Rogue Company. Toda quinta-feira o site do Prime Gaming dá acesso a um novo jogo grátis. Veja todas as novidades a seguir!/r/n",  
+      "content2":"Confira abaixo a lista completa de jogos que serão disponibilizados em breve, com a data em que cada um dos títulso será disponibilizado para os assinantes:/nJogos de junho no Amazon Prime Gaming/r/n/l1 de Junho: Sengoku 2 [App Amazon Games]/n/l1 de Junho: Mutation Nation [App Amazon Games]/n/l8 de Junho: Soccer Brawl [App Amazon Games]/n/l8 de Junho: Over Top [App Amazon Games]/n/l15 de Junho: The Super Spy [App Amazon Games]/n/l15 de Junho: Top Hunter [App Amazon Games]/n/l15 de Junho: SteamWorld Dig 2 [App Amazon Games]/n/l22 de Junho: Neverwinter Nights: Enhanced Edition [App Amazon /lGames]/n/l22 de Junho: Autonauts [App Amazon Games]/n/l22 de Junho Revita [App Amazon Games]/n/l29 de Junho Roguebook [App Amazon Games]/n/l29 de Junho Once Upon a Jester [App Amazon Games]/n/l29 de Junho Gems of Destiny: Homeless Dwarf [Legacy Games Code]/n" ,  
+      "updatedAt": "25/05/2023 às 14:45"
+     }
+  
   ],
   "comments": [
     {

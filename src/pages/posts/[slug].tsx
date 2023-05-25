@@ -1,17 +1,19 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
-import { format } from 'date-fns';
-import { ptBR } from 'date-fns/locale';
 import SEO from '../components/SEO';
 import styles from './post.module.scss';
 
 interface PostProps {
   post: {
-    id:string;
+    id: string;
     slug: string;
+    author:string;
     title: string;
-    content: string;
-    updatedAt: string;
+    urlToImage:string;
+    urlToImage2:string;
+    content:string;
+    content2:string;
+    updatedAt:string;
   };
 }
 
@@ -24,15 +26,17 @@ export default function Post({ post }: PostProps) {
 
   return (
     <>
-      <SEO title="Post" />
+      <SEO title="New" />
 
       <main className={styles.container}>
+        
         <article className={styles.post}>
           <h1>{post.title}</h1>
           <time>{post.updatedAt}</time>
           <div
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: post.content }}
+            
           />
         </article>
       </main>
@@ -54,27 +58,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const response = await fetch(`http://localhost:3333/posts/${id}`);
     const data = await response.json();
 
-    let updatedAt = ''; // Valor padrão se updatedAt for indefinido
-
-    if (data.updatedAt) {
-      updatedAt = format(
-        new Date(data.updatedAt.slice(0, 14)),
-        "yyyy-MM-dd'T'HH:mm:ss",
-        { locale: ptBR }
-      );
-    }
-
-    const post = {
-      id: data.id ? data.id.toString() : null,
-      slug: data.slug,
-      title: data.title,
-      content: data.content,
-      updatedAt: updatedAt,
-    };
-
     return {
       props: {
-        post,
+        post: data,
       },
       revalidate: 60 * 60 * 12, // 12 horas
     };

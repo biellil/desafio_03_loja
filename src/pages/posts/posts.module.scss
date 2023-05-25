@@ -7,17 +7,25 @@
   .posts {
     max-width: 720px;
     margin: 5rem auto 0;
-  
+  div{
+    margin-bottom: 1rem;
+    & + div {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray700);
+    }
     a {
-      display: block;
-  
-      & + a {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid var(--gray700);
+      
+      img{
+        cursor: pointer;
+        height: 118px;
+        width: 164px;
+        border-radius: 8px;
+        
       }
   
       time {
+        cursor: pointer;
         font-size: 1rem;
         display: flex;
         align-items: center;
@@ -33,13 +41,16 @@
       }
   
       &:hover strong {
+        cursor: pointer;
         color: var(--primary);
       }
   
       p {
+        cursor: pointer;
         color: var(--gray300);
         margin-top: 0.5rem;
         line-height: 1.625rem;
       }
     }
+  }
   }

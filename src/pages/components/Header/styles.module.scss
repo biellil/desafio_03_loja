@@ -11,14 +11,19 @@
     display: flex;
     align-items: center;
   
-    img {
-      height: 3.75rem;
-    }
+  
   
     nav {
+      display: flex;
       margin-left: 5rem;
       height: 5rem;
+      
+      
   
+      img {
+        margin-top: 1rem;
+        height: 2.75rem;
+      }
       a {
         display: inline-block;
         position: relative;
