@@ -24,7 +24,7 @@ export default function Posts({ posts }: PostsProps) {
       <main className={styles.container}>
         <div className={styles.posts}>
         {posts.map((post, index) => (
-  <Link href={`/posts/${post.id}`} key={post.id}legacyBehavior>
+   <Link href={`/posts/${post.id}`} key={post.id}legacyBehavior>
     <div>
   
       <a>
