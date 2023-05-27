@@ -39,7 +39,9 @@ export default function PostPage({ post }: PostProps) {
     <>
       
       <main className={styles.container}>
+       
         <article className={styles.post}>
+  
         <h1>{post.title}</h1>
         <time>{post.updatedAt} . {post.author}</time>
           <div

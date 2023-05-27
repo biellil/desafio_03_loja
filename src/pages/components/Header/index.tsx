@@ -14,12 +14,18 @@ export function Header() {
               <img src="/logo.svg" alt="DevNews!" />
             </a>
           </Link>
+          
+          <div>
+
           <Link href="/" className={asPath === '/' ? styles.active : ''}>
             Home
           </Link>
           <Link href="/posts" className={asPath === '/posts' ? styles.active : ''}>
             News
           </Link>
+
+          </div>
+         
         </nav>
       </div>
     </header>

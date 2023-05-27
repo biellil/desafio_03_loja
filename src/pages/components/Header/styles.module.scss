@@ -1,8 +1,8 @@
 .container {
-    height: 5rem;
-    border-bottom: 1px solid var(--gray800);
-  }
-  
+  height: 5rem;
+  border-bottom: 1px solid var(--gray800);
+
+
   .content {
     max-width: 1120px;
     height: 5rem;
@@ -10,41 +10,76 @@
     padding: 0 2rem;
     display: flex;
     align-items: center;
-  
-  
-  
+    
+
     nav {
       display: flex;
       margin-left: 5rem;
       height: 5rem;
-      
-      
-  
+
       img {
         margin-top: 1rem;
         height: 2.75rem;
       }
+
       a {
         display: inline-block;
-        position: relative;
+       
         padding: 0 0.5rem;
         height: 5rem;
         line-height: 5rem;
         color: var(--gray300);
         transition: color 0.2s;
-  
+
         & + a {
           margin-left: 2rem;
         }
-  
+
         &:hover {
           color: var(--white);
         }
-  
+
         &.active {
           color: var(--white);
           font-weight: bold;
         }
       }
+    
+
+    div {
+      margin-left: 14rem;
+    
+    }
+
+    @media (max-width: 1080px) {
+      div {
+        margin-left: 14rem;
+      }
+    }
+
+    @media (max-width: 720px) {
+   
+      div {
+        margin-left: 5rem;
+      }
+    }
+    @media (max-width:600px) {
+      div {
+        margin-left: 4rem;
+      }
+    }
+    @media (max-width:525px) {
+      div {
+        margin-left: 0.1rem;
+      }
+    }
+  
+    @media (max-width:375px) {
+      div {
+        margin-left: -0.1rem;
+
+      }
     }
   }
+  }
+}
