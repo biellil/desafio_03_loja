@@ -1,11 +1,13 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import SEO from '../components/SEO';
 import { useRouter } from 'next/router';
+import styles from './post.module.scss';
 
 interface Post {
   id: string;
   slug: string;
   title: string;
+  author:string;
   description: string;
   updatedAt: string;
   icone: string;
@@ -27,33 +29,30 @@ export default function PostPage({ post }: PostProps) {
     return <div>Carregando...</div>;
   }
 
-  const renderContent = (content: string) => {
-    if (!content) {
-      return null;
-    }
 
-    const lines = content.split('/n');
-    return lines.map((line, index) => <p key={index}>{line}</p>);
+
+  const replaceNewLines = (content: string) => {
+    return content ? content.replace(/\/n/g, '<br />') : '';
   };
 
   return (
     <>
-      <SEO title={post.title} />
-
-      <main>
-        <div>
-          <strong>{post.title}</strong>
+      
+      <main className={styles.container}>
+        <article className={styles.post}>
+        <h1>{post.title}</h1>
+        <time>{post.updatedAt} . {post.author}</time>
+          <div
+            className={styles.content1}
+            dangerouslySetInnerHTML={{ __html: replaceNewLines(post.content) }}
+          />
           <img src={post.urlToImage} />
-          <time>{post.updatedAt}</time>
-
-          {renderContent(post.content)}
-
+          <div
+            className={styles.content2}
+            dangerouslySetInnerHTML={{ __html: replaceNewLines(post.content2) }}
+          />
           <img src={post.urlToImage1} />
-
-          {renderContent(post.content1)}
-
-          <p>{post.content2}</p>
-        </div>
+        </article>
       </main>
     </>
   );
