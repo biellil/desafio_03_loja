@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npx json-server api.json -p 3333 -w
+<-- npx json-server api.json -p 3333 -w
 npm run dev
 npm run devv
 # or
