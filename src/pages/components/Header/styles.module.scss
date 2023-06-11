@@ -1,7 +1,7 @@
-.container {
+.container{
   height: 5rem;
-  border-bottom: 1px solid var(--gray800);
-
+  border-bottom: 1px solid #a39d98;
+  background: #C3BCB7;
 
   .content {
     max-width: 1120px;
@@ -11,42 +11,42 @@
     display: flex;
     align-items: center;
     
+    
 
     nav {
       display: flex;
       margin-left: 5rem;
       height: 5rem;
-
-      img {
-        margin-top: 1rem;
-        height: 2.75rem;
-      }
-
+      
+   
+    
       a {
         display: inline-block;
-       
         padding: 0 0.5rem;
         height: 5rem;
         line-height: 5rem;
-        color: var(--gray300);
-        transition: color 0.2s;
+        color:  #848790;
+        transition: color 0.2s;   
+        font-size: 23px;
+        text-decoration: none     
 
         & + a {
           margin-left: 2rem;
         }
 
         &:hover {
-          color: var(--white);
+          color:rgb(153, 128, 13);
         }
 
         &.active {
-          color: var(--white);
+          color:#180462;
           font-weight: bold;
         }
       }
     
-
+    
     div {
+     display: flex;
       margin-left: 14rem;
     
     }
@@ -80,6 +80,7 @@
 
       }
     }
+    
   }
   }
 }

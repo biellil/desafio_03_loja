@@ -1,22 +1,28 @@
-import SEO from '../pages/components/SEO';
+import React from 'react';
 import styles from '../styles/home.module.scss';
+import Card from './components/fotsCard/Card';
+
 export default function Home() {
+  const images = [
+    '/b4 (4).jpg',
+    '/352.jpg',
+    '/kit.png',
+  ];
+
   return (
-    <>
-      <SEO title="Tec News!" excludeTitleSuffix />
-     < main className={styles.content}>
-        <section className={styles.section}>
-          <span>Olá Tec!</span>
-          <h1> bem-vindos <br />
-            ao <span>Tec</span>News!
-          </h1>
-          <p>
-            Um blog com conteúdos extremamente <br />
-            <span>relevantes para mundor Tec!</span>
-          </p>
-        </section>
-        <img src="/home.svg" alt="Home image" />
-      </main>
-    </>
+    <main>
+      <div className={styles.main}>
+        <div className={styles.lest}>
+          <h1>Gráfica Agamenon</h1>
+          <h2>Prestando Serviços com Responsabilidade</h2>
+        </div>
+        <img src="/r9.jpg" alt="" />
+      </div>
+      
+
+      <div className={styles.cardContainer}>
+        <Card images={images} />
+      </div>
+    </main>
   );
 }

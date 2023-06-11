@@ -9,23 +9,28 @@ export function Header() {
     <header className={styles.container}>
       <div className={styles.content}>
         <nav>
-          <Link href="/" passHref legacyBehavior>
-            <a>
-              <img src="/logo.svg" alt="DevNews!" />
-            </a>
-          </Link>
-          
+        
           <div>
 
           <Link href="/" className={asPath === '/' ? styles.active : ''}>
             Home
           </Link>
-          <Link href="/posts" className={asPath === '/posts' ? styles.active : ''}>
-            News
+          <Link href="/Novidades" className={asPath === '/Novidades' ? styles.active : ''}>
+          Novidades
           </Link>
-
-          </div>
+          <Link href="/Destaque" className={asPath === '/Destaque' ? styles.active : ''}>
+          Destaque
+          </Link>
+          <Link href="/posts" className={asPath === '/posts2' ? styles.active : ''}>
+          Produtos
+          </Link>
+          <Link href="/posts" className={asPath === '/posts3' ? styles.active : ''}>
+          Contato
+          </Link>
          
+          </div>
+  
+        
         </nav>
       </div>
     </header>

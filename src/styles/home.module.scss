@@ -1,40 +1,64 @@
-.content {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  height: calc(100vh - 5rem);
+.main{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    .lest{
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+            text-align: start;
+            font-weight: 400;
+            text-shadow: 0 0 5px #848790;
+            padding: 0 40px;
+            color: #1B3B56;
+            font-size: 72px;
+           
+        }
+        h2{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight: 400;
+            text-align: start;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px #848790;
+            margin-top: 60px;
+            padding: 0 40px;
+            color: #1B3B56;
+        }
+        
+    }
+    
+ img{
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 60px;
+       
+        height: 50rem;
+ }
 }
+   
 
-.section {
-  max-width: 500px;
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  height: 19rem;
 
-  > span {
-    font-size: 1.5rem;
-    font-weight: bold;
+  div{
+     
+    
+    img{
+
+        height: 20rem;
+        box-Shadow: 0 0 10px 0 #848790;
+        
+        transition: 0.4s ease;
+        cursor: pointer;
+     }
+    
+     
   }
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-    font-weight: 900;
-    margin-top: 2.5rem;
-
-    span {
-      color: var(--secondary);
-    }
-  }
-
-  p {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    margin-top: 1.5rem;
-
-    span {
-      margin-top: 2.5rem;
-    }
-  }
+ 
 }
