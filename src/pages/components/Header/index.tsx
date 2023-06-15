@@ -15,11 +15,11 @@ export function Header() {
           <Link href="/" className={asPath === '/' ? styles.active : ''}>
             Home
           </Link>
+          <Link href="/Produtos" className={asPath === '/Produtos' ? styles.active : ''}>
+          Produtos
+          </Link>
           <Link href="/Novidades" className={asPath === '/Novidades' ? styles.active : ''}>
           Novidades
-          </Link>
-          <Link href="/Destaque" className={asPath === '/Destaque' ? styles.active : ''}>
-          Destaque
           </Link>
           <Link href="/posts" className={asPath === '/posts2' ? styles.active : ''}>
           Produtos

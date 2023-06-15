@@ -1,0 +1,17 @@
+.cardFot {
+ margin-top: 5rem;
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+
+   img{
+    width: 20rem;
+    height: 24rem;
+    box-shadow: 0 0 10px 0 #848790;
+    &+img{
+      margin-left: 2rem;
+    }
+  
+   }
+  }
+  

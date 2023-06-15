@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import  styles from '../fotsCard/card.module.scss';
 interface CardProps {
   images: string[];
 }
@@ -29,19 +29,14 @@ const Card: React.FC<CardProps> = ({ images }) => {
   const nextImageIndex = currentImageIndex < images.length - 1 ? currentImageIndex + 1 : 0;
   const next = images[nextImageIndex];
 
-  const imageStyle = {
-    boxShadow: '0 0 10px 0 #848790',
-    marginRight: '3rem',
-    marginLeft: '3rem',
-  };
-
   return (
-    <div>
-      <img src={previous} alt="" style={{ ...imageStyle, float: 'right' }} onClick={previousImage} />
-      <img src={currentImage} alt="" style={imageStyle} />
-      <img src={next} alt="" style={{ ...imageStyle, float: 'left' }} onClick={nextImage} />
-    </div>
+<div className={styles.cardFot} >
+      <img src={previous} alt="" style={{  float: 'right' }} onClick={previousImage} />
+      <img src={currentImage} alt="" />
+      <img src={next} alt="" style={{ float: 'left' }} onClick={nextImage} />
+</div>
   );
+  
 };
 
 export default Card;

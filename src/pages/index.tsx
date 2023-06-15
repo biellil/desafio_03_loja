@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from '../styles/home.module.scss';
 import Card from './components/fotsCard/Card';
+import Novidades from './components/Novidades/Novidades';
+
+
 
 export default function Home() {
   const images = [
-    '/b4 (4).jpg',
-    '/352.jpg',
-    '/kit.png',
+    '/card01.jpg',
+    '/card03.jpg',
+    '/card02.png',
   ];
 
   return (
@@ -19,10 +22,8 @@ export default function Home() {
         <img src="/r9.jpg" alt="" />
       </div>
       
-
-      <div className={styles.cardContainer}>
         <Card images={images} />
-      </div>
+        <Novidades/>
     </main>
   );
 }
